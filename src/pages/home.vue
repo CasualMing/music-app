@@ -1,0 +1,41 @@
+<template>
+    <div class="jiugongge">
+        <homeHeader />
+       <div class="content">
+           <group/>
+            <commonTable v-for="i in 4" :key="i"/>
+       </div>
+       <fotterBar/>
+    </div>
+</template>
+
+<script>
+import commonTable from "@/components/table/commonTable"
+import group from "@/components/table/group"
+import homeHeader from "@/components/header/homeHeader"
+import fotterBar from "@/components/tarBar/homeTarbel"
+export default {
+    // name:"home",
+    components:{
+        commonTable,
+        homeHeader,
+        group,
+        fotterBar
+    },
+    data(){
+        return{
+
+        }
+    },
+    methods:{},
+    created(){
+        
+    }
+}
+</script>
+<style lang="scss" scoped>
+.content{
+    padding: 1.5rem 0px;
+}
+</style>
+
