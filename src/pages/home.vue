@@ -5,7 +5,7 @@
            <group/>
             <commonTable v-for="i in 4" :key="i"/>
        </div>
-       <fotterBar/>
+       <!-- <fotterBar/> -->
     </div>
 </template>
 
@@ -13,14 +13,12 @@
 import commonTable from "@/components/table/commonTable"
 import group from "@/components/table/group"
 import homeHeader from "@/components/header/homeHeader"
-import fotterBar from "@/components/tarBar/homeTarbel"
 export default {
     // name:"home",
     components:{
         commonTable,
         homeHeader,
         group,
-        fotterBar
     },
     data(){
         return{

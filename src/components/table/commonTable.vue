@@ -1,13 +1,13 @@
 <template>
   <div class="jiugongge">
-    <h2 class="title">
+    <router-link class="title" to="/songList">
       <span>推荐歌单</span>
       <v-icon name="chevron-right" class="icon"/>
-    </h2>
+    </router-link>
     <ul class="music-list">
       <li v-for="i in 6" :key="i">
         <router-link to="home">
-          <img :src="imgSRC" alt srcset>
+          <img :src="imgSRC" alt srcset class="cover">
           <span>
             <v-icon name="headphones-alt"></v-icon>174万
           </span>
@@ -34,13 +34,14 @@ export default {
 .jiugongge {
   .title {
     color: #ccc;
-    height: 1rem;
-    line-height: 1rem;
+    height: .8rem;
+    line-height: .8rem;
     font-size: 0px;
     padding: 0px 0.2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: .2rem;
     span {
       color: #666;
       font-weight: 550;
@@ -55,7 +56,7 @@ export default {
   }
   .music-list {
     overflow: hidden;
-    padding: 0.15rem;
+    padding:0px  0.15rem;
     li {
       float: left;
       width: calc((100% - 0.3rem) / 3 - 0.01rem);
@@ -65,11 +66,14 @@ export default {
         margin-right: 0px;
       }
       a {
+        width: 100%;
+        height: calc(100%  - 1.2rem);
         display: block;
         position: relative;
         font-size: 0px;
         img {
           width: 100%;
+          height: 100%;
         }
         span {
           position: absolute;
@@ -89,6 +93,9 @@ export default {
         color: #333;
       }
     }
+    // .cover{
+    //    width: calc((100% - 0.3rem) / 3 - 0.01rem);
+    // }
   }
 }
 </style>

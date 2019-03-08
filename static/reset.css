@@ -92,6 +92,8 @@ video {
     font-family: 'PingFang-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     vertical-align: baseline;
     box-sizing: border-box;
+    font-style: normal;
+    list-style: none;
 }
 
 
