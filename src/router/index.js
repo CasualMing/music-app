@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import Home from '@/pages/home'
 import songList from "@/pages/songList"
 import dayRecom from "@/pages/dayRecom"
+import leaderBoard from "@/pages/leaderBoard"
+
+import listInfo from "@/pages/listInfo"
 Vue.use(Router)
 
 export default new Router({
@@ -22,5 +25,15 @@ export default new Router({
         path: "/dayRecom",
         name: "dayRecom",
         component: dayRecom,
+    }, {
+        meta: { title: "排行榜" },
+        path: "/leaderBoard",
+        name: "leaderBoard",
+        component: leaderBoard,
+    }, {
+        meta: { title: "排行榜详情" },
+        path: "/leaderBoard/listInfo",
+        name: "listInfo",
+        component: listInfo,
     }]
 })

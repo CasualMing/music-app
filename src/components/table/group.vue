@@ -13,13 +13,13 @@
       <span>每日推荐</span>
     </li>
     <li>
-      <router-link to="/" class="icon">
+      <router-link to="/songList" class="icon">
         <v-icon name="music"></v-icon>
       </router-link>
       <span>歌单</span>
     </li>
     <li>
-      <router-link to="/" class="icon">
+      <router-link to="/leaderBoard" class="icon">
         <v-icon name="list-ul"></v-icon>
       </router-link>
       <span>排行榜</span>
