@@ -7,7 +7,7 @@
       <songCover/>
     </div>
     <div class="songListTitle">
-      <router-link to="/">全部歌单
+      <router-link to="/songListSort">全部歌单
         <v-icon name="chevron-right"></v-icon>
       </router-link>
       <p>

@@ -60,7 +60,7 @@ export default {
     }
   }
   .brief {
-    line-height: 0.3rem;
+    line-height: 0.4rem;
     margin-top: 0.2rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;

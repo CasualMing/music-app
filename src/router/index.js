@@ -4,6 +4,8 @@ import Home from '@/pages/home'
 import songList from "@/pages/songList"
 import dayRecom from "@/pages/dayRecom"
 import leaderBoard from "@/pages/leaderBoard"
+import songListSort from "@/pages/songListSort"
+
 
 import listInfo from "@/pages/listInfo"
 Vue.use(Router)
@@ -20,6 +22,11 @@ export default new Router({
         path: "/songList",
         name: "songList",
         component: songList,
+    }, {
+        meta: { title: "歌单分类" },
+        path: "/songListSort",
+        name: "songListSort",
+        component: songListSort,
     }, {
         meta: { title: "每日推荐" },
         path: "/dayRecom",
