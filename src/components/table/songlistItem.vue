@@ -1,6 +1,8 @@
 <template>
   <div class="item">
-    <img :src="temp" alt srcset>
+    <router-link to="/songListInfo">
+        <img :src="temp" alt srcset>
+    </router-link>
     <p class="count">
       <v-icon name="headphones-alt"></v-icon>
       <span>34w</span>
@@ -53,10 +55,14 @@ export default {
   .people {
     position: absolute;
     left: 0.1rem;
-    bottom: 0.9rem;
+    bottom: 1.2rem;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .fa-icon {
       vertical-align: middle;
+      margin-right: .2rem;
     }
   }
   .brief {

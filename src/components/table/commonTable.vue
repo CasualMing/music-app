@@ -6,7 +6,7 @@
     </router-link>
     <ul class="music-list">
       <li v-for="i in 6" :key="i">
-        <router-link to="home">
+        <router-link to="/songListInfo">
           <img :src="imgSRC" alt srcset class="cover">
           <span>
             <v-icon name="headphones-alt"></v-icon>174万

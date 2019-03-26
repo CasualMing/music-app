@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home'
 import songList from "@/pages/songList"
+import songListInfo from "@/pages/songListInfo"
 import dayRecom from "@/pages/dayRecom"
 import leaderBoard from "@/pages/leaderBoard"
 import songListSort from "@/pages/songListSort"
-
 
 import listInfo from "@/pages/listInfo"
 Vue.use(Router)
@@ -22,6 +22,11 @@ export default new Router({
         path: "/songList",
         name: "songList",
         component: songList,
+    }, {
+        meta: { title: "歌单详情" },
+        path: "/songListInfo",
+        name: "songListInfo",
+        component: songListInfo,
     }, {
         meta: { title: "歌单分类" },
         path: "/songListSort",

@@ -3,14 +3,16 @@
     <div class="title">
       <Header :title="title"/>
     </div>
-    <p class="header-title">全部歌单</p>
+    <TypeTable/>
   </div>
 </template>
 <script>
 import Header from "@/components/header/songListHeader";
+import TypeTable from "@/components/table/typeTable"
 export default {
   components: {
-    Header
+    Header,
+    TypeTable
   },
   data() {
     return {
